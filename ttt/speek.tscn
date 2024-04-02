@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=3 uid="uid://hi08k2de25ry"]
+
+[ext_resource type="Script" path="res://ttt/speek.gd" id="1_ssdid"]
+
+[node name="speek" type="Node2D"]
+script = ExtResource("1_ssdid")
+metadata/_edit_lock_ = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="start" type="Button" parent="."]
+offset_left = -487.0
+offset_top = -18.0
+offset_right = -363.0
+offset_bottom = 13.0
+text = "hi"
+metadata/_edit_lock_ = true
+
+[node name="so" type="Button" parent="."]
+offset_left = -329.0
+offset_top = -18.0
+offset_right = -205.0
+offset_bottom = 13.0
+text = "so"
+metadata/_edit_lock_ = true
+
+[node name="sub" type="Button" parent="."]
+offset_left = -156.0
+offset_top = -22.0
+offset_right = -32.0
+offset_bottom = 9.0
+text = "sub"
+metadata/_edit_lock_ = true
+
+[node name="go" type="Button" parent="."]
+offset_left = 2.0
+offset_top = -22.0
+offset_right = 126.0
+offset_bottom = 9.0
+text = "lets go
+"
+metadata/_edit_lock_ = true
+
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="so" to="." method="_on_so_pressed"]
+[connection signal="pressed" from="sub" to="." method="_on_sub_pressed"]
+[connection signal="pressed" from="go" to="." method="_on_go_pressed"]
